@@ -38,7 +38,7 @@ export interface IPointGroup {
   points: IBasicPoint[];
 }
 
-export default class SignaturePad {
+export class SignaturePad {
   // Public stuff
   public dotSize: number | (() => number);
   public minWidth: number;

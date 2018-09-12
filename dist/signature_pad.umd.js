@@ -4,10 +4,10 @@
  */
 
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.SignaturePad = factory());
-}(this, (function () { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (factory((global.SignaturePad = {})));
+}(this, (function (exports) { 'use strict';
 
   var Point = (function () {
       function Point(x, y, time) {
@@ -524,6 +524,8 @@
       return SignaturePad;
   }());
 
-  return SignaturePad;
+  exports.SignaturePad = SignaturePad;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
 
 })));

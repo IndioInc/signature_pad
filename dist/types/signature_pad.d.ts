@@ -20,7 +20,7 @@ export interface IPointGroup {
     color: string;
     points: IBasicPoint[];
 }
-export default class SignaturePad {
+export declare class SignaturePad {
     private canvas;
     private options;
     dotSize: number | (() => number);

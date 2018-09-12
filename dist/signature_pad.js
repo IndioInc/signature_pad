@@ -5,6 +5,8 @@
 
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 var Point = (function () {
     function Point(x, y, time) {
         this.x = x;
@@ -520,4 +522,4 @@ var SignaturePad = (function () {
     return SignaturePad;
 }());
 
-module.exports = SignaturePad;
+exports.SignaturePad = SignaturePad;
