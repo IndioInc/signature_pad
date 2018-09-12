@@ -106,7 +106,7 @@ export default [
     ],
     output: {
       file: 'dist/signature_pad.m.js',
-      format: 'es',
+      format: 'cjs',
       banner,
     },
   },
@@ -124,7 +124,7 @@ export default [
     ],
     output: {
       file: 'dist/signature_pad.m.min.js',
-      format: 'es',
+      format: 'cjs',
       banner,
     },
   },

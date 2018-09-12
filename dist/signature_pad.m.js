@@ -3,6 +3,8 @@
  * (c) 2018 Szymon Nowak | Released under the MIT license
  */
 
+'use strict';
+
 var Point = (function () {
     function Point(x, y, time) {
         this.x = x;
@@ -518,4 +520,4 @@ var SignaturePad = (function () {
     return SignaturePad;
 }());
 
-export default SignaturePad;
+module.exports = SignaturePad;
